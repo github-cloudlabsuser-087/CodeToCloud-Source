@@ -2,10 +2,10 @@ $studentsuffix = "410092"
 $resourcegroupName = "fabmedical-rg-" + $studentsuffix
 $cosmosDBName = "fabmedical-cdb-" + $studentsuffix
 $webappName = "fabmedical-web-" + $studentsuffix
+$appInsights = "fabmedicalai-" + $studentsuffix
 $planName = "fabmedical-plan-" + $studentsuffix
 $location1 = "westeurope"
 $location2 = "northeurope"
-$appInsights = "fabmedicalai-" + $studentsuffix
 
 #First create a group
 $rg = az group create --name $resourcegroupName --location $location1 | ConvertFrom-Json 
